@@ -21,7 +21,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.versioning.ArtifactVersion;
 import cpw.mods.fml.common.versioning.VersionRange;
 
-@Mod(modid = ModAPI.MODID, version = ModAPI.VERSION,name="Mod-API-Nly(B2XQVsAJGjqZ9en)")
+@Mod(modid = ModAPI.MODID, version = ModAPI.VERSION,name="Mod-API-Nly("+Strings.getHash+")")
 public class ModAPI extends DummyModContainer
 {
     public static final String MODID = "Mod-API-Nightly";
