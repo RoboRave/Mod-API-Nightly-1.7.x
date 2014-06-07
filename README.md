@@ -12,7 +12,7 @@ mod packages:
   mods.roborave.modapi
   mods.roborave.modapi.because.i.felt.like.it
   mods.roborave.modapi.lib
-simple version: 0.0.1
+  simple version: 0.0.1
 -------------------
 no further lines
 -------------------
