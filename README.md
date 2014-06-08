@@ -8,7 +8,9 @@ there will be a build everynight.
     6/6/2014
 ------------------
 first commit no build. but build number increased to 1.
-mod packages:                                               .
+
+mod packages:   
+.
   mods.roborave.modapi,                     
   
   mods.roborave.modapi.because.i.felt.like.it, 
@@ -27,25 +29,25 @@ $repackaged classes
 .
 +add ConfigScreen          
 .
-+add builds folder                                          .
-mod packages:                                               .
++add builds folder                                           
+mod packages:                                               
   . mods.roborave.common.modapi,    
-  .
+  
   .mods.roborave.common.modapi.lib,     
-  .
-  .mods.roborave.client.gui,                                 .
   
-  .mods.roborave.api,                                        .
+  .mods.roborave.client.gui,                                 
   
-  .mods.roborave.api.modapi.block,                           .
-  .
-  .mods.common.util,                                         .
-  .
-  .mods.common.util.config,                                  .
-  .
+  .mods.roborave.api,                                        
+  
+  .mods.roborave.api.modapi.block,                           
+  
+  .mods.common.util,                                         
+  
+  .mods.common.util.config,                                  
+  
   .mods.common.util.config.gui,
   
-  simple version: alpha-0.0.2                               .
+  simple version: alpha-0.0.2                               
   
 -------------------
 no further lines
