@@ -31,7 +31,7 @@ mod packages:                                               .
   mods.common.util,                                         .
   mods.common.util.config,                                  .
   mods.common.util.config.gui,
-  simple version: alpha-0.0.2
+  simple version: alpha-0.0.2                               .
   
 -------------------
 no further lines
