@@ -480,11 +480,13 @@ public class GuiEditListEntries extends GuiListExtended
         private final HoverChecker   addNewEntryAboveHoverChecker;
         protected final GuiButtonExt btnRemoveEntry;
         private final HoverChecker   removeEntryHoverChecker;
-        private List                 addNewToolTip, removeToolTip;
+        @SuppressWarnings("rawtypes")
+		private List                 addNewToolTip, removeToolTip;
         protected boolean            isValidValue = true;
         protected boolean            isValidated  = false;
         
-        public EditListBaseEntry()
+        @SuppressWarnings({ "unchecked", "rawtypes" })
+		public EditListBaseEntry()
         {
             this.btnAddNewEntryAbove = new GuiButtonExt(0, 0, 0, 18, 18, "+");
             this.btnAddNewEntryAbove.packedFGColour = HUDUtils.getColorCode('2', true);

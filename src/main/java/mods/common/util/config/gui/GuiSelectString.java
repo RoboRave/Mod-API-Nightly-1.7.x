@@ -15,7 +15,8 @@ public class GuiSelectString extends GuiScreen
     protected GuiScreen               parentScreen;
     protected IConfigProperty         prop;
     private GuiSelectStringEntries    guiScrollList;
-    private GuiButtonExt              btnUndoChanges, btnDefault, btnDone;
+    @SuppressWarnings("unused")
+	private GuiButtonExt              btnUndoChanges, btnDefault, btnDone;
     private String                    title;
     protected String                  titleLine2;
     protected String                  titleLine3;
@@ -24,10 +25,12 @@ public class GuiSelectString extends GuiScreen
     private final String              beforeValue;
     private String                    currentValue;
     private HoverChecker              tooltipHoverChecker;
-    private List                      toolTip;
+    @SuppressWarnings("rawtypes")
+	private List                      toolTip;
     protected boolean                 enabled;
     
-    public GuiSelectString(GuiScreen parentScreen, IConfigProperty prop, int slotIndex, Map<String, String> selectableValues, String currentValues, boolean enabled)
+    @SuppressWarnings("rawtypes")
+	public GuiSelectString(GuiScreen parentScreen, IConfigProperty prop, int slotIndex, Map<String, String> selectableValues, String currentValues, boolean enabled)
     {
         this.mc = Minecraft.getMinecraft();
         this.parentScreen = parentScreen;
@@ -76,7 +79,8 @@ public class GuiSelectString extends GuiScreen
     /**
      * Adds the buttons (and other controls) to the screen in question.
      */
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public void initGui()
     {
         this.guiScrollList = new GuiSelectStringEntries(this, this.mc, this.prop, this.selectableValues, this.beforeValue, this.currentValue);
@@ -154,7 +158,8 @@ public class GuiSelectString extends GuiScreen
             drawToolTip(this.toolTip, par1, par2);
     }
     
-    public void drawToolTip(List stringList, int x, int y)
+    @SuppressWarnings("rawtypes")
+	public void drawToolTip(List stringList, int x, int y)
     {
         this.drawHoveringText(stringList, x, y, fontRendererObj);
     }

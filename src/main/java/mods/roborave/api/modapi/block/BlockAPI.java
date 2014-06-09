@@ -1,35 +1,37 @@
 package mods.roborave.api.modapi.block;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockAPI {
 
-	public static Block block1;
+	public static BlockUtil block1;
+	public static BlockAPI Create;
 	/**
 	 * 
 	 * @param block
-	 * @param Material
-	 * @param BlockClass
+	 * @param CreativeTab 
+	 * @param material 
 	 * @return
 	 */
-	public static Block createBlock(Block block, Material Material, Block BlockClass)
+	public static BlockAPI createBlock(BlockUtil block, CreativeTabs CreativeTab, Material material)
 	{
 		block1=block;
-		block= new BlockUtil(Material);
-		return BlockUtil.isBlockCreated();
+		block= new BlockUtil(material);
+		return Create;
 	}
 	/**
 	 * 
 	 * @param name
 	 * @param textureName
 	 * @param block
+	 * @param creativetab 
 	 * @return
 	 */
-	public static Block addPeremeters(String name, String textureName, Class<?extends BlockUtil> block)
+	public static BlockAPI addPeremeters(String name, String textureName, Class<?extends BlockUtil> block, CreativeTabs creativetab)
 	{
 		try {
-			return block.newInstance().AddMethods(name, textureName);
+			block.newInstance().AddMethods(name, textureName, creativetab);
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -37,7 +39,7 @@ public class BlockAPI {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return block1;
+		return Create;
 	}
 }
 

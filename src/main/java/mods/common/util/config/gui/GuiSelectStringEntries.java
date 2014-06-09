@@ -18,9 +18,12 @@ public class GuiSelectStringEntries extends GuiListExtended
     private Minecraft                       mc;
     private IConfigProperty                 prop;
     private List<IGuiSelectStringListEntry> listEntries;
-    private boolean                         isDefault;
-    private boolean                         isChanged;
-    private final Map<String, String>       selectableValues;
+    @SuppressWarnings("unused")
+	private boolean                         isDefault;
+    @SuppressWarnings("unused")
+	private boolean                         isChanged;
+    @SuppressWarnings("unused")
+	private final Map<String, String>       selectableValues;
     private final String                    beforeValue;
     public String                           currentValue;
     private int                             selectedIndex;

@@ -1,18 +1,22 @@
 package mods.roborave.api.modapi.block;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import mods.common.util.MCLog;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class BlockUtil extends Block 
 {
 	public static Block isBlockCreated;
 
 	public static BlockUtil i;
-	public BlockUtil(Material p_i45394_1_) 
+
+	private static Material Material1;
+	
+	public BlockUtil(Material blockMaterial1) 
 	{
-		super(p_i45394_1_);
+		super(blockMaterial1);
 	}
 
 	public static Block isBlockCreated() {
@@ -22,11 +26,19 @@ public class BlockUtil extends Block
 	}
 		return isBlockCreated;
 	}
-
-	public BlockUtil AddMethods(String NAME, String textureName1)
+	/**
+	 * 
+	 * @param NAME
+	 * @param TextureName
+	 * @param material 
+	 * @param CreativeTab 
+	 * @return
+	 */
+	public BlockUtil AddMethods(String NAME, String TextureName,  CreativeTabs CreativeTab)
 	{
 		setBlockName(NAME);
-		setBlockTextureName(textureName1);
+		setBlockTextureName(TextureName);
+		setCreativeTab(CreativeTab);
 		GameRegistry.registerBlock(this, NAME);
 		return this;
 	}

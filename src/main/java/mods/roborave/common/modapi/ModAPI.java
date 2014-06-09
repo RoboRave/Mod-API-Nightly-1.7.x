@@ -1,11 +1,7 @@
 package mods.roborave.common.modapi;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import mods.common.util.config.ConfigManager;
 import mods.common.util.config.Configuration;
-import mods.roborave.api.modapi.BlockT;
-import mods.roborave.api.modapi.block.BlockAPI;
 import mods.roborave.common.modapi.lib.Strings;
 import cpw.mods.fml.common.DummyModContainer;
 import cpw.mods.fml.common.Mod;
@@ -18,7 +14,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class ModAPI extends DummyModContainer
 {
     public static final String MODID = "Mod-API-Nightly";
-    public static final String VERSION = Strings.getHash + Strings.getBuild;
+    public static final String VERSION = Strings.Version+ Strings.getBuild;
     public static final String NAME = "ModAPI-Nly";
     
     @Mod.Instance(ModAPI.MODID)
@@ -43,7 +39,7 @@ public class ModAPI extends DummyModContainer
     	
     	ConfigManager.CreateConfig(event, MODID, NAME);
     	ConfigManager.config.load();
-    	this.setDev(ConfigManager.getBoolean("Developer Mode", Configuration.CATEGORY_GENERAL, false, "This inables Developer for Mod-API. WIP"));
+    	this.setDev(ConfigManager.getBoolean("Developer Mode", Configuration.CATEGORY_GENERAL, false, "This enables Developer for Mod-API. WIP"));
     	ConfigManager.config.save();
     }
     
@@ -69,13 +65,21 @@ public class ModAPI extends DummyModContainer
 	@Override
 	public String getVersion() 
 	{
-		return Strings.buildType+"-0.0.2";
+		return Strings.Version;
 	}
 
 
 	public boolean isDev() 
 	{
-		return dev;
+		if(dev==true)
+		{
+			return true;
+		}
+			else
+		{
+			return false;
+		}
+		
 	}
 
 

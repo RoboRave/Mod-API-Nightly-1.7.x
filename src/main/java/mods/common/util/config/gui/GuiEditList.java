@@ -29,7 +29,8 @@ public class GuiEditList extends GuiScreen
 	private List               toolTip;
     protected boolean          enabled;
     
-    public GuiEditList(GuiScreen parentScreen, IConfigProperty prop, int slotIndex, String[] currentValues, boolean enabled)
+    @SuppressWarnings("rawtypes")
+	public GuiEditList(GuiScreen parentScreen, IConfigProperty prop, int slotIndex, String[] currentValues, boolean enabled)
     {
         this.mc = Minecraft.getMinecraft();
         this.parentScreen = parentScreen;
@@ -187,7 +188,8 @@ public class GuiEditList extends GuiScreen
             drawToolTip(this.toolTip, par1, par2);
     }
     
-    public void drawToolTip(List stringList, int x, int y)
+    @SuppressWarnings("rawtypes")
+	public void drawToolTip(List stringList, int x, int y)
     {
         this.drawHoveringText(stringList, x, y, fontRendererObj);
     }

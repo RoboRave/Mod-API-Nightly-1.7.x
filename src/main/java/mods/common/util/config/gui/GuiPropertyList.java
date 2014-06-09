@@ -60,7 +60,8 @@ public class GuiPropertyList extends GuiListExtended
      */
     public int                       scrollBarX;
     
-    public GuiPropertyList(GuiConfig parent, Minecraft mc)
+    @SuppressWarnings("unused")
+	public GuiPropertyList(GuiConfig parent, Minecraft mc)
     {
         super(mc, parent.width, parent.height, parent.titleLine2 != null ? 33 : 23, parent.height - 32, 20);
         this.parentGuiConfig = parent;
@@ -1258,9 +1259,12 @@ public class GuiPropertyList extends GuiListExtended
         protected final String          propName;
         protected final GuiButtonExt    btnUndoChanges;
         protected final GuiButtonExt    btnDefault;
-        protected List                  toolTip;
-        protected List                  undoToolTip;
-        protected List                  defaultToolTip;
+        @SuppressWarnings("rawtypes")
+		protected List                  toolTip;
+        @SuppressWarnings("rawtypes")
+		protected List                  undoToolTip;
+        @SuppressWarnings("rawtypes")
+		protected List                  defaultToolTip;
         protected boolean               isValidValue = true;
         protected HoverChecker          tooltipHoverChecker;
         protected HoverChecker          undoHoverChecker;
