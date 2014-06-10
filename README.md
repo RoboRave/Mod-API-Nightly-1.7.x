@@ -19,7 +19,6 @@ mod packages:
   mods.roborave.modapi.lib, 
   
   simple version: 0.0.1                                     
-                                                            
 ------------------
     6/7/2014
 ------------------
@@ -50,7 +49,6 @@ mod packages:
   .mods.common.util.config.gui,
   
   simple version: alpha-0.0.2                               
-  
 ------------------
     6/8/2014
 ------------------
@@ -83,7 +81,6 @@ mod packages:
   . mods.common.util.config.gui,
   
   simple version: alpha-0.0.3                              
-  
 ------------------
     6/9/2014
 ------------------
