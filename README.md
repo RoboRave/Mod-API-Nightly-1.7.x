@@ -2,7 +2,7 @@ Mod-API-Nightly-1.7.x
 =====================
 
 Mod API
-there will be a build everynight. 
+there will be a build everynight. (maybe sometimes)
 
 ------------------
     6/6/2014
