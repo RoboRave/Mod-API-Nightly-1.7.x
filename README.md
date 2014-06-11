@@ -110,7 +110,37 @@ mod packages:
   
   . mods.common.util.config.gui,
   
-  simple version: alpha-0.0.3         
+  simple version: alpha-0.0.3  
+------------------
+    6/10/2014
+------------------
+
+No changes I was busy.
+
+no build
+
+mod packages:                                               
+  . mods.roborave.common.modapi,    
+  
+  . mods.roborave.common.modapi.lib,     
+  
+  . mods.roborave.client.gui,                                 
+  
+  . mods.roborave.api,                                        
+  
+  . mods.roborave.api.modapi.block, 
+  
+  . mods.roborave.api.modapi.item,
+  
+  . mods.roborave.api.modapi.test,
+    
+  . mods.common.util,                                         
+  
+  . mods.common.util.config,                                  
+  
+  . mods.common.util.config.gui,
+  
+  simple version: alpha-0.0.3   
 -------------------
 no further lines
 -------------------
