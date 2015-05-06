@@ -86,7 +86,7 @@ mod packages:
 ---------------------------
 
 No changes I was busy.
-the repo was halted till 6/23/2014
+the development of this repo is halted until further notice
 -------------------
 no further lines
 -------------------
