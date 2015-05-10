@@ -12,8 +12,6 @@ public class BlockUtil extends Block
 
 	public static BlockUtil i;
 
-	private static Material Material1;
-	
 	public BlockUtil(Material blockMaterial1) 
 	{
 		super(blockMaterial1);
