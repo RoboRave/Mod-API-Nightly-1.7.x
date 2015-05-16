@@ -4,7 +4,6 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class ItemAPI {
 
-	public static ItemUtil Item1;
 	public static ItemAPI Create;
 	/**
 	 * 
@@ -15,7 +14,6 @@ public class ItemAPI {
 	 */
 	public static ItemAPI createItem(ItemUtil item, CreativeTabs CreativeTab)
 	{
-		Item1=item;
 		item= new ItemUtil(CreativeTab);
 		return Create;
 	}

@@ -5,7 +5,6 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockAPI {
 
-	public static BlockUtil block1;
 	public static BlockAPI Create;
 	/**
 	 * 
@@ -16,7 +15,6 @@ public class BlockAPI {
 	 */
 	public static BlockAPI createBlock(BlockUtil block, CreativeTabs CreativeTab, Material material)
 	{
-		block1=block;
 		block= new BlockUtil(material);
 		return Create;
 	}

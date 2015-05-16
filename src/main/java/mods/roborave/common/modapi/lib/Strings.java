@@ -9,6 +9,6 @@ public class Strings {
 	public static final String major="0";
 	public static final String minor="1";
 	public static final String maintenance="1";
-	public static final String Version=major+"."+minor+"["+"maintenance"+"["+getBuild+"]"+"]-";
+	public static final String Version=major+"."+minor+"["+maintenance+"["+getBuild+"]"+"]-";
 	
 }
